@@ -1,7 +1,7 @@
 from helpers import dependency
 from skeletons.gui.shared import IItemsCache
 
-def dump_sorted_cache():
+def dump():
     items_cache = dependency.instance(IItemsCache)
 
     all_vehs = items_cache.items.getVehicles()
@@ -35,4 +35,4 @@ def dump_sorted_cache():
 
     print "Dumped!"
 
-dump_sorted_cache()
+dump()
